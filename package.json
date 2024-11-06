@@ -1,0 +1,52 @@
+{
+	"name": "directus-extension-pdf2img-operation",
+	"description": "Directus operation extension used to convert a PDF from an URL to images and store them",
+	"icon": "extension",
+	"license": "MIT",
+	"version": "1.0.0",
+	"author": "Euryece Telecom",
+	"keywords": [
+		"directus",
+		"directus-extension",
+		"directus-extension-operation",
+		"pdf2img"
+	],
+	"type": "module",
+	"files": [
+		"dist"
+	],
+	"directus:extension": {
+		"type": "operation",
+		"path": {
+			"app": "dist/app.js",
+			"api": "dist/api.js"
+		},
+		"source": {
+			"app": "src/app.ts",
+			"api": "src/api.ts"
+		},
+		"host": "^10.10.0"
+	},
+	"scripts": {
+		"build": "directus-extension build",
+		"dev": "directus-extension build -w --no-minify",
+		"link": "directus-extension link"
+	},
+	"devDependencies": {
+		"@directus/extensions-sdk": "11.0.1",
+		"@types/node": "^20.11.25",
+		"typescript": "^5.4.2",
+		"vue": "^3.4.21"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/euryecetelecom/directus-extension-pdf2img-operation.git"
+	},
+	"homepage": "https://github.com/euryecetelecom/directus-extension-pdf2img-operation",
+	"publishConfig": {
+		"access": "public"
+	},
+	"dependencies": {
+		"pdf2pic": "^3.1.3"
+	}
+}
