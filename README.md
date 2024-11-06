@@ -34,5 +34,5 @@ USER root
 RUN apk add graphicsmagick ghostscript
 RUN corepack enable
 USER node
-RUN pnpm install directus-extension-models directus-extension-api-viewer directus-extension-schema-sync
+RUN pnpm install directus-extension-pdf2img-operation
 ```
